@@ -15,6 +15,11 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <LinkContainer to="/">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                About Us
+              </Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/medical-aesthetics">
               <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
                 Medical Aesthetics
