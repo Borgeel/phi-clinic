@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { LinkContainer } from "react-router-bootstrap";
 
 import logo from "../assets/images/logo.png";
 
@@ -14,44 +15,43 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/medical-aesthetics"
-            >
-              Medical Aesthetics
-            </Nav.Link>
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/dental-aesthetics"
-            >
-              Dental Aesthetics
-            </Nav.Link>
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/hair-transplantation"
-            >
-              Hair Transplantation
-            </Nav.Link>
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/stem-cell-therapy"
-            >
-              Stem Cell Therapy
-            </Nav.Link>
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/sexual-wellness"
-            >
-              Sexual Wellness
-            </Nav.Link>
+            <LinkContainer to="/">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                About Us
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/medical-aesthetics">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Medical Aesthetics
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/dental-aesthetics">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Dental Aesthetics
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/hair-transplantation">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Hair Transplantation
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/stem-cell-therapy">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Stem Cell Therapy
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/sexual-wellness">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Sexual Wellness
+              </Nav.Link>
+            </LinkContainer>
           </Nav>
           <Nav>
-            <Nav.Link
-              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
-              href="/contact "
-            >
-              Contact Us
-            </Nav.Link>
+            <LinkContainer to="contact">
+              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
+                Contact Us
+              </Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
