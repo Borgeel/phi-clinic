@@ -16,6 +16,12 @@ function CollapsibleExample() {
           <Nav className="me-auto">
             <Nav.Link
               className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
+              href="/about"
+            >
+              About Us
+            </Nav.Link>
+            <Nav.Link
+              className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1"
               href="/medical-aesthetics"
             >
               Medical Aesthetics
