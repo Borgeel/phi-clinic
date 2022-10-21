@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import DentalAesthetics from "./pages/DentalAesthetics";
 import HairTransplantation from "./pages/HairTransplantation";
@@ -15,7 +14,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="about" element={<About />}></Route>
         <Route
           path="medical-aesthetics"
           element={<MedicalAesthetics />}
