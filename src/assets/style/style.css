@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Acma';
+  src: local('PPAcma-Semibold'), url(./../../fonts/PPAcma-Semibold.otf) format('woff');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,8 +17,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  background-color: #e9dac4;
+body, #root {
+  background-color: #f1dedc;
+  width: 100vw;
+  height: 100vh;
 }
 
 .fs-10 {
@@ -42,4 +49,28 @@ body {
 
 .fs-32 {
   font-size: 2.4rem;
+}
+
+.hero-title2 {
+  font-family: Acma;
+}
+
+.hero-container {
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: sticky;
+}
+
+.hero-image-container {
+  height: 100%;
+  width: 50%;
+}
+
+.hero-image {
+  height: 100%;
+  width: auto;
 }
