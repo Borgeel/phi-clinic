@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #e9dac4;
+}
+
+.fs-10 {
+  font-size: 1rem;
+}
+
+.fs-12 {
+  font-size: 1.2rem;
+}
+
+.fs-14 {
+  font-size: 1.4rem;
+}
+
+.fs-16 {
+  font-size: 1.6rem;
+}
+
+.fs-20 {
+  font-size: 1.8rem;
+}
+
+.fs-24 {
+  font-size: 2rem;
+}
+
+.fs-32 {
+  font-size: 2.4rem;
+}
