@@ -1,5 +1,13 @@
+import Hero from "../components/Hero";
+import Marquee from "../components/Marquee";
+
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Hero />
+      <Marquee />
+    </>
+  );
 }
 
 export default Home;

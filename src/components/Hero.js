@@ -1,16 +1,18 @@
-import woman from "../assets/images/woman.png"
+import woman from "../assets/images/woman.png";
 
 const Hero = () => {
-  return(
+  return (
     <div className="hero-container">
       <div>
-        <div className="hero-title">Unleash Your Inner Radiance And Natural Beauty</div>
+        <div className="hero-title">
+          Unleash Your Inner Radiance And Natural Beauty
+        </div>
       </div>
       <div className="hero-image-container">
-        <img src={woman} className="hero-image"/>
+        <img src={woman} className="hero-image" />
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
