@@ -97,3 +97,8 @@ body, #root {
   margin: 2% 0;
   display: inline-flex;
 }
+
+.background-primary {
+  background-color: #f1dedc;;
+}
+
