@@ -7,7 +7,13 @@ import logo from "../assets/images/logo.png";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      className="fixed-top"
+    >
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="logo" width="130rem" />

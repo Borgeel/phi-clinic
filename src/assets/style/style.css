@@ -102,3 +102,11 @@ body, #root {
   background-color: #f1dedc;;
 }
 
+.font-primary {
+  font-family: 'DMSans', sans-serif ;
+}
+
+.carousel-items img {
+  max-height: 100vh;
+  object-fit: cover;
+}
