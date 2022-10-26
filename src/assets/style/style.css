@@ -107,10 +107,15 @@ body, #root {
 }
 
 .carousel-items img {
-  max-height: 100vh;
+  max-height: 90vh;
   object-fit: cover;
 }
 
 .color-primary {
   color: #c7c8c9
+}
+
+.jumbotron-item {
+  border-right: 1.5px solid black;
+  margin-bottom: 1rem;
 }

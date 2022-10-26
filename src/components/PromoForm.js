@@ -4,33 +4,36 @@ import Form from "react-bootstrap/Form";
 
 function PromoForm() {
   return (
-    <Card className="bg-warning p-3 m-3 bg-opacity-75">
+    <Card className="bg-warning bg-opacity-75 my-4">
       <Card.Body>
-        <Form className>
+        <Card.Subtitle>Interesed?</Card.Subtitle>
+        <Card.Title>Let's keep in touch!</Card.Title>
+        <Card.Text>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+          quidem, recusandae nihil corporis...
+        </Card.Text>
+        <Form className="p-1">
           <Row>
             <Col xs={6}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group controlId="formBasicEmail">
                 <Form.Label>Phone</Form.Label>
                 <Form.Control type="number" placeholder="Phone" />
               </Form.Group>
             </Col>
 
             <Col xs={6}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="text" placeholder="Name" />
               </Form.Group>
             </Col>
           </Row>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Group controlId="formBasicPassword" className="my-3">
             <Form.Label>Email</Form.Label>
             <Form.Control type="email" placeholder="Email" />
             <Form.Text className="text-muted">
               We'll never share your number or email with anyone else.
             </Form.Text>
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           <div className="d-grid">
             <Button variant="primary" size="lg" type="submit">
