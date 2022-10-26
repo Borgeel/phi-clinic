@@ -7,20 +7,14 @@ import logo from "../assets/images/logo.png";
 
 function CollapsibleExample() {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      bg="dark"
-      variant="dark"
-      className="fixed-top"
-    >
-      <Container>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+      <Container fluid>
         <Navbar.Brand href="/">
           <img src={logo} alt="logo" width="130rem" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto my-auto my-lg-0" navbarScroll>
             <LinkContainer to="/">
               <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
                 About Us

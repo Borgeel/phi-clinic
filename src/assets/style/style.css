@@ -110,3 +110,7 @@ body, #root {
   max-height: 100vh;
   object-fit: cover;
 }
+
+.color-primary {
+  color: #c7c8c9
+}
