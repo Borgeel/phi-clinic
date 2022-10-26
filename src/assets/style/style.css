@@ -57,22 +57,26 @@ body, #root {
 }
 
 .hero-container {
-  background-image: url("/src/assets/images/woman.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
   height: 90%;
   display: flex;
-  justify-content: right;
-  align-items: center;
   position: sticky;
+}
+
+.hero-image {
+  background-image: url("/src/assets/images/woman2.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 50%;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-left: 50%;
+  width: 50%;
+  justify-content: center;
+  margin-left: -5%
 }
 
 .hero-title-container {
@@ -81,19 +85,38 @@ body, #root {
   word-break: break-word;
   transform: skew(-20deg);
   background: white;
-  font-size: 2rem;
+  font-size: 3vw;
   font-family: Palmtick;
-  border: 1px solid #ffc4eb
+  border: 2px solid #ffc4eb
 }
 
 .hero-title {
   display: inline-flex;
   transform: skew(20deg);
+  white-space: nowrap;
 }
 
 .hero-subtitle {
   font-family: DMSans;
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin: 2% 0;
   display: inline-flex;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+
+  .hero-text-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-image {
+    width: 100%;
+    height: 70%;
+  }
+  .hero-text-container {
+    align-items: center;
+  }
 }
