@@ -1,4 +1,4 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import BootCarousel from "../components/BootCarousel";
 
 import home1 from "../assets/images/home1.jpg";
@@ -56,10 +56,11 @@ function Home() {
             xs={6}
             className="p-1 my-4 d-flex justify-content-center align-items-center"
           >
-            <img
+            <Image
+              fluid
               src={home1}
               alt="about us"
-              className="img-fluid rounded shadow-sm"
+              className="rounded shadow-sm w-50"
               style={{ objectFit: "cover", maxHeight: "70vh" }}
             />
           </Col>
@@ -68,10 +69,11 @@ function Home() {
         <Container fluid="sm" className="my-4">
           <Row>
             <Col xs={6}>
-              <img
+              <Image
+                fluid
                 src={carousel3}
                 alt="form"
-                className="img-fuild rounded shadow-sm my-4"
+                className="rounded shadow-sm my-4 w-50"
                 style={{ objectFit: "cover", maxHeight: "70vh" }}
               />
             </Col>
@@ -80,23 +82,29 @@ function Home() {
             </Col>
           </Row>
         </Container>
-        <Card>
-          <Container className="d-flex flex-row">
-            {testimonies.map((testimony) => {
-              return (
-                <Testimonials
-                  img={user}
-                  text={testimony.text}
-                  name={testimony.name}
-                />
-              );
-            })}
-          </Container>
-
-          <Button variant="outline-secondary" size="sm">
-            See More
-          </Button>
-        </Card>
+      </Container>
+      <Container fluid>
+        <Container className="text-center justify-content-center p-2">
+          <p className="my-0">What our customers say about us</p>
+          <h3>Customer Testimonials</h3>
+        </Container>
+        <Container>
+          <Card className="p-3">
+            <Row>
+              {testimonies.map((testimony) => {
+                return (
+                  <Col lg={3} md={6} sm={12}>
+                    <Testimonials
+                      img={user}
+                      text={testimony.text}
+                      name={testimony.name}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+          </Card>
+        </Container>
       </Container>
     </>
   );

@@ -1,22 +1,21 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 
 function Testimonials({ img, text, name }) {
   return (
-    <Row xs={1} md={2} lg={3} className="m-0 p-2 font-primary">
-      <Col xs={1} md={6} lg={5} className="m-0 p-0">
-        <img
-          src={img}
-          alt="user"
-          className="img-fluid"
-          style={{ maxWidth: "60px" }}
-        />
-      </Col>
-      <Col xs={1} md={6} lg={11} className="ms-2 p-0 text-wrap">
-        <p>{text}</p>
-        <h5>{name}</h5>
-      </Col>
-    </Row>
+    <Container xs={12}>
+      <Row>
+        <Col lg={3} md={3} sm={2}>
+          <p>
+            <Image src={img} alt="user" fluid style={{ maxWidth: "50px" }} />
+          </p>
+        </Col>
+        <Col lg={9} md={9} sm={10}>
+          <h5>{name}</h5>
+          <p>{text}</p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

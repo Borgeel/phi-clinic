@@ -119,3 +119,8 @@ body, #root {
   border-right: 1.5px solid black;
   margin-bottom: 1rem;
 }
+
+.footer-row {
+  border-bottom: 1.5px solid #c7c8c9;
+  color: #c7c8c9;
+}
