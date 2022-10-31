@@ -61,22 +61,25 @@ body, #root {
   height: 90%;
   display: flex;
   position: sticky;
+  background-color: #5d5555;
 }
 
 .hero-image {
-  background-image: url("/src/assets/images/woman2.png");
+  background-image: url("/src/assets/images/woman3.png");
   background-size: contain; 
   background-repeat: no-repeat;
   background-position: bottom;
-  width: 50%;
+  width: 100%;
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
   justify-content: center;
-  margin-left: -5%
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
 }
 
 .hero-title-container {
@@ -84,23 +87,33 @@ body, #root {
   width: fit-content;
   word-break: break-word;
   transform: skew(-20deg);
-  background: white;
-  font-size: 3vw;
-  font-family: Palmtick;
-  border: 2px solid #ffc4eb
+  padding: 2%;
+  border: 1px solid #ffc4eb
 }
 
 .hero-title {
   display: inline-flex;
   transform: skew(20deg);
   white-space: nowrap;
+  font-size: 3vw;
+  font-family: Palmtick;
+  color: white;
+}
+
+.hero-title:hover {
+    backdrop-filter: blur(0.4px); 
+    -webkit-filter: blur(0.4px);
+    -moz-filter: blur(0.4px);
+    -ms-filter: blur(0.4px);
+    -o-filter: blur(0.4px);
+    filter: blur(0.4px);
 }
 
 .hero-subtitle {
   font-family: DMSans;
   font-size: 2vw;
-  margin: 2% 0;
-  display: inline-flex;
+  margin: 2% auto;
+  color: white;
 }
 
 @media only screen and (max-width: 991px) {
