@@ -6,7 +6,7 @@ import carousel3 from "../assets/images/carousel3.jpg";
 import user from "../assets/images/user.png";
 
 import PromoForm from "../components/PromoForm";
-import Jumbotron from "./Jumbotron";
+import Jumbotron from "../components/Jumbotron";
 import Testimonials from "../components/Testimonials";
 
 const testimonies = [
@@ -66,22 +66,6 @@ function Home() {
           </Col>
         </Row>
         <hr />
-        <Container fluid="sm" className="my-4">
-          <Row>
-            <Col xs={6}>
-              <Image
-                fluid
-                src={carousel3}
-                alt="form"
-                className="rounded shadow-sm my-4 w-50"
-                style={{ objectFit: "cover", maxHeight: "70vh" }}
-              />
-            </Col>
-            <Col xs={6}>
-              <PromoForm />
-            </Col>
-          </Row>
-        </Container>
       </Container>
       <Container fluid>
         <Container className="text-center justify-content-center p-2">
@@ -104,7 +88,24 @@ function Home() {
               })}
             </Row>
           </Card>
+          <hr />
         </Container>
+      </Container>
+      <Container fluid="sm" className="my-4">
+        <Row>
+          <Col xs={6}>
+            <Image
+              fluid
+              src={carousel3}
+              alt="form"
+              className="rounded shadow-sm my-4 w-50"
+              style={{ objectFit: "cover", maxHeight: "70vh" }}
+            />
+          </Col>
+          <Col xs={6}>
+            <PromoForm />
+          </Col>
+        </Row>
       </Container>
     </>
   );
