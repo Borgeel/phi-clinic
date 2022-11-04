@@ -31,7 +31,7 @@ const testimonies = [
 function Home() {
   return (
     <>
-      <BootCarousel />
+      {/* <BootCarousel /> */}
       <Jumbotron />
       <Container fluid="sm" className="my-4">
         <Row className="align-items-center">

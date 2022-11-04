@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route
