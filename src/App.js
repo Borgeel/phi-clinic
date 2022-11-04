@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import MedicalAesthetics from "./pages/MedicalAesthetics";
 import SexualWellness from "./pages/SexualWellness";
 import StemCellTherapy from "./pages/StemCellTherapy";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="sexual-wellness" element={<SexualWellness />}></Route>
         <Route path="contact" element={<Contact />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

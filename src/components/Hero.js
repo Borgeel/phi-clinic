@@ -5,13 +5,10 @@ const Hero = () => {
       <span className="hero-text-container">
         <span className="hero-title-container">
         <span className="hero-title">
-            <span style={{textDecoration: "underline"}}>Unleash</span>
+            <span style={{textDecoration: "underline", fontFamily: "EBGaramond"}}>Unleash</span>
             &nbsp;Your Inner Radiance And Natural Beauty
           </span>
         </span>
-        {/* <span className="hero-title-container">
-          <span className="hero-title">And Natural Beauty</span>
-        </span> */}
           <span className="hero-subtitle">Get the best results with us at PHI Clinic</span>
       </span>
     </div>

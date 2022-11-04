@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Palmtick';
-  src: local('palmtick'), url(./../../fonts/palmtick.otf) format('woff');
+  font-family: 'EBGaramond';
+  src: local('palmtick'), url(./../../fonts/EBGaramond.ttf) format('woff');
 }
 
 @font-face {
@@ -12,20 +12,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'DMSans';
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body, #root {
   background-color: #f1dedc;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
 }
 
 .fs-10 {
@@ -58,9 +63,14 @@ body, #root {
 
 .hero-container {
   width: 100%;
-  height: 90%;
+  height: 90vh;
   display: flex;
   position: sticky;
+  background-color: #5d5555;
+}
+
+.navbar.sticky-top{
+  height: 10vh;
   background-color: #5d5555;
 }
 
@@ -88,7 +98,9 @@ body, #root {
   word-break: break-word;
   transform: skew(-20deg);
   padding: 2%;
-  border: 1px solid #ffc4eb
+  border: 1px inset white;
+  color: white;
+  transition: 1s;
 }
 
 .hero-title {
@@ -96,17 +108,15 @@ body, #root {
   transform: skew(20deg);
   white-space: nowrap;
   font-size: 3vw;
-  font-family: Palmtick;
-  color: white;
+  font-family: EBGaramond;
+  
 }
 
-.hero-title:hover {
-    backdrop-filter: blur(0.4px); 
-    -webkit-filter: blur(0.4px);
-    -moz-filter: blur(0.4px);
-    -ms-filter: blur(0.4px);
-    -o-filter: blur(0.4px);
-    filter: blur(0.4px);
+.hero-title-container:hover {
+    color: #5d5555;
+    background-color: rgba(255, 237, 232, 0.9);
+    border: none;
+    cursor: pointer;
 }
 
 .hero-subtitle {
@@ -121,15 +131,57 @@ body, #root {
     flex-direction: column-reverse;
   }
 
+  .hero-title {
+    display: block;
+    white-space: normal;
+    font-size: 4vh;
+    text-align: center;
+    transform: none;
+
+  }
+
+  .hero-title-container {
+    border:none;
+    transform: none;
+  }
+
   .hero-text-container {
     width: 100%;
     margin-left: 0;
+    top: 20%;  /* position the top  edge of the element at the middle of the parent */
   }
   .hero-image {
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
   .hero-text-container {
     align-items: center;
   }
+}
+
+.background-primary {
+  background-color: #f1dedc;;
+}
+
+.font-primary {
+  font-family: 'DMSans', sans-serif ;
+}
+
+.carousel-items img {
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+.color-primary {
+  color: #c7c8c9
+}
+
+.jumbotron-item {
+  border-right: 1.5px solid black;
+  margin-bottom: 1rem;
+}
+
+.footer-row {
+  border-bottom: 1.5px solid #c7c8c9;
+  color: #c7c8c9;
 }
