@@ -2,7 +2,7 @@ import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import BootCarousel from "../components/BootCarousel";
 
 import home1 from "../assets/images/facetreatment.png";
-import carousel3 from "../assets/images/carousel3.jpg";
+import carousel3 from "../assets/images/browsing.jpg";
 import user from "../assets/images/user.png";
 
 import PromoForm from "../components/PromoForm";
@@ -100,8 +100,8 @@ function Home() {
               fluid
               src={carousel3}
               alt="form"
-              className="rounded shadow-sm my-4 w-50"
-              style={{ objectFit: "cover", maxHeight: "70vh" }}
+              className="rounded shadow-sm my-4 w-100"
+              style={{ objectFit: "cover" }}
             />
           </Col>
           <Col xs={6}>
