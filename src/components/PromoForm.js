@@ -4,9 +4,9 @@ import Form from "react-bootstrap/Form";
 
 function PromoForm() {
   return (
-    <Card className="bg-warning bg-opacity-75 my-4">
+    <Card className="form my-4">
       <Card.Body>
-        <Card.Subtitle>Interesed?</Card.Subtitle>
+        <Card.Subtitle>Interested?</Card.Subtitle>
         <Card.Title>Let's keep in touch!</Card.Title>
         <Card.Text>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
@@ -36,7 +36,7 @@ function PromoForm() {
             </Form.Text>
           </Form.Group>
           <div className="d-grid">
-            <Button variant="primary" size="lg" type="submit">
+            <Button className="grey-button" size="lg" type="submit">
               Submit
             </Button>
           </div>

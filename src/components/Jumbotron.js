@@ -5,7 +5,8 @@ function Jumbotron() {
   return (
     <Row
       fluid
-      className="jumbotron jumbotron-fluid bg-secondary bg-opacity-75 m-0 font-primary text-center"
+      className="jumbotron jumbotron-fluid bg-blue m-0 font-primary text-center"
+      style={{padding: "10vh 5vw"}}
     >
       <Col xs={13}>
         <h3 className="display-7 mt-3">Premiere Medical & Dental Clinics</h3>
