@@ -3,15 +3,15 @@ import { Nav } from "react-bootstrap";
 
 function SocialMedia() {
   return (
-    <Nav className="flex-column">
+    <Nav className="text-center justify-content-center">
       <Nav.Link className="link-light">
-        <i className="bi bi-facebook"> Facebook</i>
+        <i className="bi bi-facebook"></i>
       </Nav.Link>
       <Nav.Link className="link-light">
-        <i className="bi bi-whatsapp"> WhatsApp</i>
+        <i className="bi bi-whatsapp"></i>
       </Nav.Link>
       <Nav.Link className="link-light">
-        <i className="bi bi-instagram icon-large"> Instagram</i>
+        <i className="bi bi-instagram icon-large"></i>
       </Nav.Link>
     </Nav>
   );
