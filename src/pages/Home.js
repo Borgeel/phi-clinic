@@ -1,12 +1,13 @@
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import BootCarousel from "../components/BootCarousel";
 
-import home1 from "../assets/images/home1.jpg";
+import home1 from "../assets/images/facetreatment.png";
 import carousel3 from "../assets/images/carousel3.jpg";
 import user from "../assets/images/user.png";
 
 import PromoForm from "../components/PromoForm";
 import Jumbotron from "../components/Jumbotron";
+import ParallaxImage from "../components/ParallaxImage";
 import Testimonials from "../components/Testimonials";
 
 const testimonies = [
@@ -33,6 +34,7 @@ function Home() {
     <>
       {/* <BootCarousel /> */}
       <Jumbotron />
+      <ParallaxImage />
       <Container fluid="sm" className="my-4">
         <Row className="align-items-center">
           <Col xs={6}>
@@ -41,27 +43,27 @@ function Home() {
             <p className="font-primary">
               PHI Clinic is a group of Premiere Medical and Dental Aesthetic
               clinics located in Kuala Lumpur, Malaysia. PHI Clinic is
-              completely equipped with the most sophisticated and cuing-edge
+              completely equipped with the most sophisticated and cutting-edge
               treatments in aesthetic medicine administered and managed by a
               team
             </p>
             <Button variant="outline-dark m-2" size="sm" className="shadow">
               Read more
             </Button>
-            <Button variant="warning" size="sm" className="shadow">
-              Book A consultation
+            <Button size="sm" className="shadow grey-button">
+              Book a consultation
             </Button>
           </Col>
           <Col
             xs={6}
-            className="p-1 my-4 d-flex justify-content-center align-items-center"
+            className="p-5 my-4 d-flex justify-content-center align-items-center"
           >
             <Image
               fluid
               src={home1}
               alt="about us"
-              className="rounded shadow-sm w-50"
-              style={{ objectFit: "cover", maxHeight: "70vh" }}
+              className="rounded shadow-sm"
+              style={{ objectFit: "cover", maxHeight: "60vh"}}
             />
           </Col>
         </Row>
@@ -73,7 +75,7 @@ function Home() {
           <h3>Customer Testimonials</h3>
         </Container>
         <Container>
-          <Card className="p-3">
+          <Card className="p-3 testimonial">
             <Row>
               {testimonies.map((testimony) => {
                 return (
