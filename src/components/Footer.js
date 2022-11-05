@@ -35,9 +35,6 @@ function Footer() {
               <LinkContainer to="medical-aesthetics">
                 <Nav.Link className="p-0 mb-1">Medical Aesthetics</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="dental-aesthetics">
-                <Nav.Link className="p-0 mb-1">Dental Aesthetics</Nav.Link>
-              </LinkContainer>
               <LinkContainer to="hair-transplantation">
                 <Nav.Link className="p-0 mb-1">Hair Transplantation</Nav.Link>
               </LinkContainer>

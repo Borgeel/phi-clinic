@@ -9,7 +9,7 @@ function Jumbotron() {
       style={{padding: "10vh 5vw"}}
     >
       <Col xs={13}>
-        <h3 className="display-7 mt-3">Premiere Medical & Dental Clinics</h3>
+        <h3 className="display-7 mt-3">Premiere Medical Clinics</h3>
         <p className="lead fs-10 p-1">
           Aesthetic clinics located in Kuala Lumpur, Malaysia. PHI Clinic is
           completely equipped with the most sophisticated and cutting-edge treat
