@@ -1,5 +1,4 @@
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
-import BootCarousel from "../components/BootCarousel";
 
 import home1 from "../assets/images/facetreatment.png";
 import carousel3 from "../assets/images/carousel3.jpg";
@@ -37,7 +36,7 @@ function Home() {
       <ParallaxImage />
       <Container fluid="sm" className="my-4">
         <Row className="align-items-center">
-          <Col xs={6}>
+          <Col md={6}>
             <h2>About Phi Clinic</h2>
             <hr />
             <p className="font-primary">
@@ -55,7 +54,7 @@ function Home() {
             </Button>
           </Col>
           <Col
-            xs={6}
+            md={6}
             className="p-5 my-4 d-flex justify-content-center align-items-center"
           >
             <Image
@@ -63,7 +62,7 @@ function Home() {
               src={home1}
               alt="about us"
               className="rounded shadow-sm"
-              style={{ objectFit: "cover", maxHeight: "60vh"}}
+              style={{ objectFit: "cover", maxHeight: "60vh" }}
             />
           </Col>
         </Row>
@@ -95,7 +94,7 @@ function Home() {
       </Container>
       <Container fluid="sm" className="my-4">
         <Row>
-          <Col xs={6}>
+          <Col md={6} className="d-flex justify-content-center">
             <Image
               fluid
               src={carousel3}
@@ -104,7 +103,7 @@ function Home() {
               style={{ objectFit: "cover", maxHeight: "70vh" }}
             />
           </Col>
-          <Col xs={6}>
+          <Col md={6}>
             <PromoForm />
           </Col>
         </Row>

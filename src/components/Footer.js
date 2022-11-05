@@ -76,12 +76,12 @@ function Footer() {
         </Col>
       </Row>
       <hr className="mb-3 text-light" />
-      <Row className="d-flex align-items-center justify-content-center text-light p-4">
+      <Row className="d-flex align-items-center justify-content-center text-light p-2">
         <Col md={12} className="d-flex justify-content-center m-1">
           <span>Book a Consultation</span>
         </Col>
         <Col md={12} className="d-flex justify-content-center m-1">
-          <Button type="button" variant="outline-light">
+          <Button type="button" variant="outline-light" className="p-3">
             Sign up!
           </Button>
         </Col>

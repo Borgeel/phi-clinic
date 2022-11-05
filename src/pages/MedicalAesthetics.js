@@ -22,14 +22,19 @@ function MedicalAesthetics() {
       <Container>
         Face
         <p>Skin Rejuvenation</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Skin Tightening</p>
+        <p>Pigmentation</p>
+        <p>Acne</p>
+        <p>Acne Scars</p>
+        <p>Wrinkles & Lines</p>
+        <p>Axillary Hyperhidrosis or Palmer Hyperhidrosis</p>
+        <p>Lip Rejuvenation</p>
+        <p>Eye Bags</p>
+        <p>Face V-shaping</p>
+        <p>Pore Reduction</p>
+        <p>Facials</p>
+        <p>Non-Surgical Nose Augmentation</p>
+        <p>Volumisation</p>
       </Container>
       <Container>Wellness</Container>
     </section>
