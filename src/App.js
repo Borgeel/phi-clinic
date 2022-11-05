@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
-import DentalAesthetics from "./pages/DentalAesthetics";
 import HairTransplantation from "./pages/HairTransplantation";
 import Home from "./pages/Home";
 import Hero from "./components/Hero";
@@ -21,7 +20,6 @@ function App() {
           path="medical-aesthetics"
           element={<MedicalAesthetics />}
         ></Route>
-        <Route path="dental-aesthetics" element={<DentalAesthetics />}></Route>
         <Route
           path="hair-transplantation"
           element={<HairTransplantation />}

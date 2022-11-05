@@ -1,5 +1,4 @@
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
-import BootCarousel from "../components/BootCarousel";
 
 import home1 from "../assets/images/facetreatment.png";
 import carousel3 from "../assets/images/browsing.jpg";
@@ -41,7 +40,7 @@ function Home() {
             <h2>About Phi Clinic</h2>
             <hr />
             <p className="font-primary">
-              PHI Clinic is a group of Premiere Medical and Dental Aesthetic
+              PHI Clinic is a group of Premiere Medical Aesthetic
               clinics located in Kuala Lumpur, Malaysia. PHI Clinic is
               completely equipped with the most sophisticated and cutting-edge
               treatments in aesthetic medicine administered and managed by a

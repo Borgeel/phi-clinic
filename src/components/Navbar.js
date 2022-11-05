@@ -25,11 +25,6 @@ function CollapsibleExample() {
                 Medical Aesthetics
               </Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/dental-aesthetics">
-              <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
-                Dental Aesthetics
-              </Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/hair-transplantation">
               <Nav.Link className="font-secondary fs-10 ms-lg-1 ms-md-3 ms-1">
                 Hair Transplantation
