@@ -1,0 +1,61 @@
+{
+  "treatments": [
+    {
+      "id": 1,
+      "title": "SilkPeel Microdermabrasion",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/silkpeel-microdermabrasion"
+    },
+    {
+      "id": 2,
+      "title": "Fire and Ice Facial",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/fire-and-ice-facial"
+    },
+    {
+      "id": 3,
+      "title": "Platelet Rich Plasma (PRP)",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/platelet-rich-plasma"
+    },
+    {
+      "id": 4,
+      "title": "Thermage CPT",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/thermage-cpt"
+    },
+    {
+      "id": 5,
+      "title": "Thermage CPT",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/thermage-cpt"
+    },
+    {
+      "id": 6,
+      "title": "EXILIS",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/exilis"
+    },
+    {
+      "id": 7,
+      "title": "Excel V",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/excel-v"
+    },
+    {
+      "id": 8,
+      "title": "Platelet Rich Plasma (PRP)",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/platelet-rich-plasma"
+    }
+
+  ]
+}
