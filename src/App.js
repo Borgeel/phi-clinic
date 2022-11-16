@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import HairTransplantation from "./pages/HairTransplantation";
 import Home from "./pages/Home";
-import Hero from "./components/Hero";
 import MedicalAesthetics from "./pages/MedicalAesthetics";
 import SexualWellness from "./pages/SexualWellness";
 import StemCellTherapy from "./pages/StemCellTherapy";
@@ -13,7 +12,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route
