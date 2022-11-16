@@ -1,7 +1,106 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
+import Treatment from "../components/Treatment";
+import React, { useState } from 'react';
 
 function MedicalAesthetics() {
+
+  const [body, setBody] = useState([]);
+  const [face, setFace] = useState([]);
+  const [wellness, setWellness] = useState([]);
+
+  const demoData = [
+    {
+      "id": 1,
+      "title": "SilkPeel Microdermabrasion",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/silkpeel-microdermabrasion"
+    },
+    {
+      "id": 2,
+      "title": "Fire and Ice Facial",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/fire-and-ice-facial"
+    },
+    {
+      "id": 3,
+      "title": "Platelet Rich Plasma (PRP)",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/platelet-rich-plasma"
+    },
+    {
+      "id": 4,
+      "title": "Thermage CPT",
+      "type": "body",
+      "category": "hand rejuvenation",
+      "link": "/thermage-cpt"
+    },
+    {
+      "id": 5,
+      "title": "Thermage CPT",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/thermage-cpt"
+    },
+    {
+      "id": 6,
+      "title": "EXILIS",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/exilis"
+    },
+    {
+      "id": 7,
+      "title": "Excel V",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/excel-v"
+    },
+    {
+      "id": 8,
+      "title": "Platelet Rich Plasma (PRP)",
+      "type": "body",
+      "category": "skin tightenning & firming",
+      "link": "/platelet-rich-plasma"
+    }
+  ];
+  
+  function fetchData() {
+    fetch("http://localhost:3000/treatments").then(res => res.json()).then(result =>{
+      
+      result.forEach(treatment => {
+        if(treatment.type == 'body'){
+          let newArr = body;
+          newArr.push(treatment);
+          setBody(newArr)
+        }
+        else if(treatment.type == 'face'){
+          let newArr = face;
+          newArr.push(treatment);
+          setFace(newArr)
+        }
+        else if(treatment.type == 'wellness'){
+          let newArr = wellness;
+          newArr.push(treatment);
+          setWellness(newArr)
+        }
+      });
+
+      return;
+    } 
+    ).catch(console.log);
+  }
+
+  fetchData();
+
+  function readResults(){
+    console.log('this.body je: ', body, ', this.face je: ', face, ', this.wellness je: ', wellness);
+    return 
+  }
+
   return (
     <Row>
       <Col xs={3}>
@@ -45,6 +144,10 @@ function MedicalAesthetics() {
           Wellness
           <p>Diet Programmes</p>
           <p>Bio-Identical Hormone Replacement Therapy</p>
+        </Container>
+        <Container>
+            <p onClick={readResults}>Rezultati na klik</p>
+            <Treatment treatments={demoData} />
         </Container>
       </Col>
     </Row>
