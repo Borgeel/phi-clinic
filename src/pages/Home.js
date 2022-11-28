@@ -4,6 +4,10 @@ import home1 from "../assets/images/facetreatment.png";
 import carousel3 from "../assets/images/browsing.jpg";
 import user from "../assets/images/user.png";
 
+<<<<<<< HEAD
+=======
+// Components
+>>>>>>> c2146bf30402e85b4dd630cdb1efcff0f1da8588
 import Hero from "../components/Hero";
 import PromoForm from "../components/PromoForm";
 import Jumbotron from "../components/Jumbotron";
@@ -43,11 +47,10 @@ function Home() {
             <h2>About Phi Clinic</h2>
             <hr />
             <p className="font-primary">
-              PHI Clinic is a group of Premiere Medical Aesthetic
-              clinics located in Kuala Lumpur, Malaysia. PHI Clinic is
-              completely equipped with the most sophisticated and cutting-edge
-              treatments in aesthetic medicine administered and managed by a
-              team
+              PHI Clinic is a group of Premiere Medical Aesthetic clinics
+              located in Kuala Lumpur, Malaysia. PHI Clinic is completely
+              equipped with the most sophisticated and cutting-edge treatments
+              in aesthetic medicine administered and managed by a team
             </p>
             <Button variant="outline-dark m-2" size="sm" className="shadow">
               Read more

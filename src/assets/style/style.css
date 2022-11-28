@@ -210,22 +210,34 @@ body, #root {
   font-family: 'DMSans', sans-serif ;
 }
 
+.color-primary {
+  color: #c7c8c9
+}
+
 .carousel-items img {
   max-height: 90vh;
   object-fit: cover;
 }
 
-.color-primary {
-  color: #c7c8c9
-}
 
 .jumbotron-item {
   border-right: 1.5px solid black;
   margin-bottom: 1rem;
 }
 
+
+
 .footer-row {
   border-bottom: 1.5px solid #c7c8c9;
   color: #c7c8c9;
 }
 
+
+/* SIDEBAR */
+
+.sidebar {
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
