@@ -4,8 +4,10 @@ import home1 from "../assets/images/facetreatment.png";
 import carousel3 from "../assets/images/browsing.jpg";
 import user from "../assets/images/user.png";
 
+import Hero from "../components/Hero";
 import PromoForm from "../components/PromoForm";
 import Jumbotron from "../components/Jumbotron";
+import Navbar from "../components/Navbar";
 import ParallaxImage from "../components/ParallaxImage";
 import Testimonials from "../components/Testimonials";
 
@@ -31,7 +33,8 @@ const testimonies = [
 function Home() {
   return (
     <>
-      {/* <BootCarousel /> */}
+      <Navbar />
+      <Hero />
       <Jumbotron />
       <ParallaxImage />
       <Container fluid="sm" className="my-4">
